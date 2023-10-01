@@ -6,8 +6,8 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { setupListeners } from "@reduxjs/toolkit/dist/query";
 import { rtkQueryErrorLogger } from "./middleware";
-import { blogApi } from "~/pages/blog/blog.service";
-import blogReducer from "~/pages/blog/blog.slice";
+import { blogApi } from "src/pages/blog/blog.service";
+import blogReducer from "src/pages/blog/blog.slice";
 // ...
 
 export const store = configureStore({

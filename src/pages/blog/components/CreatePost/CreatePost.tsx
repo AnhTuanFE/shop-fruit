@@ -7,10 +7,10 @@ import {
 } from "../../blog.service";
 import { Fragment, useEffect, useMemo, useState } from "react";
 import { useSelector } from "react-redux";
-import { RootState } from "~/redux/store";
-import { Post } from "~/types/blog.type";
+import { RootState } from "src/redux/store";
+import { Post } from "src/types/blog.type";
 // isFetchBaseQueryError
-import { isEntityError } from "~/utils/helpers";
+import { isEntityError } from "src/utils/helpers";
 
 const initialState: Omit<Post, "id"> = {
   description: "",

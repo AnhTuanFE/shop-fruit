@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import { Post } from "~/types/blog.type";
-import { CustomError } from "~/utils/helpers";
+import { Post } from "../../types/blog.type";
+import { CustomError } from "../../utils/helpers";
 
 // Nếu bên slice chúng ta dùng createSlice để tạo slice thì bên RTK query dùng createApi
 // Với createApi chúng ta gọi là slice api

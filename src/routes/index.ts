@@ -1,7 +1,8 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import DefaultLayout from "../layouts/defaulLayout/DefaulLayout";
 import Home from "../pages/Home";
 import Test from "../pages/Test";
+import Blog from "../pages/blog";
 
 interface Route {
   path: string;
@@ -13,6 +14,7 @@ const publicRoutes: Route[] = [
   { path: "/", component: Home, layout: DefaultLayout },
   { path: "/test", component: Test, layout: null },
   { path: "/login", component: Home, layout: null },
+  { path: "/blog", component: Blog, layout: null },
 
   { path: "*", component: null, layout: null },
 ];
