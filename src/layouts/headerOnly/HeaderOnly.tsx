@@ -1,23 +1,19 @@
 import React, { ReactNode } from "react";
 import Header from "../components/Header";
-import Footer from "../components/Footer";
 
-interface DefaultLayoutProps {
+interface HeaderOnlyProp {
   children: ReactNode;
 }
 
-const DefaultLayout: React.FC<DefaultLayoutProps> = ({ children }) => {
+function HeaderOnly({ children }: HeaderOnlyProp) {
   return (
     <>
       <div>
         <Header />
       </div>
       <div className="min-h-[70vh]">{children}</div>
-      <div>
-        <Footer />
-      </div>
     </>
   );
-};
+}
 
-export default DefaultLayout;
+export default HeaderOnly;
